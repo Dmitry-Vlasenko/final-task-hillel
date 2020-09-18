@@ -39,3 +39,12 @@ and at the end install helm-chart for cert-manager
 
 `helm install jenkins stable/jenkins -f jenkins/values.yaml`
 
+#### 4. Install Prometheus Operator
+
+To install the namespace. 
+
+`kubectl create namespace monitoring`
+
+installation prometheus, writing comand.
+
+`helm install prometheus-operator -f Prometheus\ Operator/values.yaml stable/prometheus-operator  --namespace monitoring`
