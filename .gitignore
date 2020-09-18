@@ -1,1 +1,5 @@
 .idea
+/infrastructure in code/.terraform/
+/infrastructure in code/terraform.tfstate
+/infrastructure in code/terraform.tfstate.backup
+/infrastructure in code/.terraform.tfstate.lock.info
