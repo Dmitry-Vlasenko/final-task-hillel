@@ -34,3 +34,8 @@ later apply ClusterIssuer
 and at the end install helm-chart for cert-manager
 
 `helm install cert-manager --namespace cert-manager jetstack/cert-manager --version v0.14.1`
+
+#### 3. Install jenkins
+
+`helm install jenkins stable/jenkins -f jenkins/values.yaml`
+
