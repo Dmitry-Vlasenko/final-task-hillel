@@ -378,14 +378,14 @@ alertmanager:
     ## Storage is the definition of how storage will be used by the Alertmanager instances.
     ## ref: https://github.com/coreos/prometheus-operator/blob/master/Documentation/user-guides/storage.md
     ##
-    storage:
-      volumeClaimTemplate:
-        spec:
-          storageClassName: gp2
-          accessModes: [ "ReadWriteOnce" ]
-          resources:
-            requests:
-              storage: 1Gi
+    storage: {}
+    # volumeClaimTemplate:
+    #   spec:
+    #     storageClassName: gluster
+    #     accessModes: ["ReadWriteOnce"]
+    #     resources:
+    #       requests:
+    #         storage: 50Gi
     #   selector: {}
 
 
@@ -1843,14 +1843,14 @@ prometheus:
     ## Prometheus StorageSpec for persistent data
     ## ref: https://github.com/coreos/prometheus-operator/blob/master/Documentation/user-guides/storage.md
     ##
-    storageSpec:
-      volumeClaimTemplate:
-        spec:
-          storageClassName: gluster
-          accessModes: [ "ReadWriteOnce" ]
-          resources:
-            requests:
-              storage: 5Gi
+    storageSpec: {}
+    #  volumeClaimTemplate:
+    #    spec:
+    #      storageClassName: gluster
+    #      accessModes: ["ReadWriteOnce"]
+    #      resources:
+    #        requests:
+    #          storage: 50Gi
     #    selector: {}
 
     # Additional volumes on the output StatefulSet definition.
